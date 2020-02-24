@@ -1,0 +1,105 @@
+body {
+    font-family: -apple-system, 'Source Sans Pro', Meiryo, sans-serif;
+width: 100%;
+    min-height: 100%;
+}
+
+.hero {
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.hero .hero-foot .hero-foot--wrapper {
+    margin: 7px auto;
+    height: 50px;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop {
+    line-height: 38px;
+    letter-spacing: 1px;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li {
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
+    border-bottom: 1px solid #363636;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
+    color: #363636;
+}
+
+.hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
+    color: #363636;
+    transition: all .2s ease-in-out;
+    border-bottom: 1px solid #363636;
+}
+
+.section {
+    text-align: center;
+}
+
+h3.title span {
+    border-bottom: solid 1px #363636;
+}
+
+h4.subtitle span {
+    font-weight: bold;
+}
+
+svg {
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+@media screen and (max-width: 768px){
+    svg{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+p.pre-line {
+    white-space: pre-line;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+p.desc {
+    padding-bottom: 20px;
+}
+
+.card-grid .column {
+    display: grid;
+}
+
+.card-header-title {
+    font-size: large;
+}
+
+.card-header-title .icon {
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.tag-container {
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.tag-container .tag {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.card-image {
+    margin-bottom: 15px;
+}
