@@ -207,7 +207,7 @@ new Vue({
             {
                 name: "Portfolio",
                 tags: ["HTML", "CSS", "JavaScript", "Vue.js"],
-                href: "https://github.com/yurkth/yurkth.github.io",
+                href: "https://github.com/yurkth/portfolio",
                 image: "assets/img/portfolio.png",
                 desc: `このサイトです。Vue.jsとBulmaを使用しています。`
             },
