@@ -205,6 +205,14 @@ new Vue({
                 生成アルゴリズムにはセル・オートマトンを使用しています。`
             },
             {
+                name: "Procedural Map Generator",
+                tags: ["JavaScript", "p5.js"],
+                href: "https://github.com/yurkth/stsmapgen",
+                image: "assets/img/mapgen.png",
+                desc: `Slay the Spireというゲームに出てくるようなマップを生成します。
+                Poisson Disk Sampling、Delaunay三角形分割、A*を利用しています。`
+            },
+            {
                 name: "Portfolio",
                 tags: ["HTML", "CSS", "JavaScript", "Vue.js"],
                 href: "https://github.com/yurkth/portfolio",
