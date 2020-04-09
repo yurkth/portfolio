@@ -87,7 +87,7 @@ new Vue({
     el: '#app',
     data: {
         profile: `はじめまして。torinと申します。
-        現在、東京農工大学に通っており、2022年卒業予定の学部生です。理系の高校に通っていたため、高校の頃からプログラミングを学び始めました。
+        現在、東京農工大学に通っており、2022年卒業予定の学部生です。理系の高校に通っていたため、高校の頃からプログラミングを学んでいます。
         最近、興味のある分野はALifeやProcedural generationです。`,
         svg: {
             color: [
@@ -218,6 +218,14 @@ new Vue({
                 href: "https://github.com/yurkth/portfolio",
                 image: "assets/img/portfolio.png",
                 desc: `このサイトです。Vue.jsとBulmaを使用しています。`
+            },
+            {
+                name: "Remote controller",
+                tags: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Vue.js"],
+                href: "https://github.com/yurkth/remote",
+                image: "assets/img/remote.png",
+                desc: `ラズパイやスマホからPCを操作できます。日付や時間のほか、PCで再生している楽曲の詳細も表示できます。
+                フロントエンドにVue.js、バックエンドにFlaskを使っています。CSSフレームワークはBulmaです。`
             },
             {
                 name: "discord-notify",
