@@ -205,7 +205,7 @@ new Vue({
                 生成アルゴリズムにはセル・オートマトンを使用しています。`
             },
             {
-                name: "Procedural Map Generator",
+                name: "stsmapgen (Procedural Map Generator)",
                 tags: ["JavaScript", "p5.js"],
                 href: "https://github.com/yurkth/stsmapgen",
                 image: "assets/img/mapgen.png",
