@@ -2,144 +2,144 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>torin's portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>torin's portfolio</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app" class="has-text-grey-darker">
-        <a id="home"></a>
-        <section class="hero is-dark is-bold is-medium">
-            <div class="hero-body">
-                <div class="container has-text-centered">
-                    <h1 class="title is-2">torin's portfolio</h1>
-                </div>
-            </div>
-            <div class="hero-foot is-hidden-mobile has-background-white">
-                <div class="hero-foot--wrapper">
-                    <div class="columns">
-                        <div class="column is-12 hero-menu-desktop has-text-centered">
-                            <ul>
-                                <li class="is-active">
-                                    <a href="#home">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#profile">Profile</a>
-                                </li>
-                                <li>
-                                    <a href="#skill">Skill</a>
-                                </li>
-                                <li>
-                                    <a href="#work">Work</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="profile">
-            <h3 class="title is-3">
-                <span>Profile</span>
-            </h3>
-            <div class="container">
-                <h4 class="subtitle is-3 has-text-grey-darker">torin</h4>
-                <div class="columns is-desktop is-centered is-vcentered">
-                    <div class="column">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px"
-                            height="200px" viewBox="0,0,10,10">
-                            <path
-                                d="m0,0h10v2h-1v-1h-1v1h-2v-1h-2v1h-2v-1h-1v1h-1zm0,8h1v1h1v1h-2zm9,0h1v2h-2v-1h1zm-6,1h1v1h-1zm3,0h1v1h-1z"
-                                opacity="0" />
-                            <path
-                                d="m1,1h1v1h2v-1h2v1h2v-1h1v1h1v6h-1v1h-1v1h-1v-1h-1v1h-2v-1h-1v1h-1v-1h-1v-1h-1v-6h1zm1,1h-1v6h1v1h1v-1h1v1h2v-1h1v1h1v-1h1v-6h-1v1h-2v-1h-2v1h-2zm0,2h1v1h-1zm5,0h1v1h-1zm-3,1h2v1h-2z"
-                                v-bind:fill="svg.color[svg.index].outline" />
-                            <path
-                                d="m1,2h1v1h2v-1h2v1h2v-1h1v6h-1v1h-1v-1h-1v1h-2v-1h-1v1h-1v-1h-1zm2,2h-1v1h1zm5,0h-1v1h1zm-3,1h-1v1h2v-1z"
-                                v-bind:fill="svg.color[svg.index].base" />
-                        </svg>
-                    </div>
-                    <div class="column">
-                        <p class="pre-line">{{ profile }}</p>
-                        <div class="social-media">
-                            <media-button v-for="media in medias" v-bind:key="media.id" v-bind="media"></media-button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section has-background-grey-lighter" id="skill">
-            <h3 class="title is-3">
-                <span>Skill</span>
-            </h3>
-            <div class="container card-grid">
-                <h4 class="subtitle is-5 has-text-grey-darker">
-                    <span>Main Languages</span>
-                </h4>
-                <p class="desc">基本的にはこれらの言語を使っています。</p>
-                <div class="columns is-desktop is-multiline is-centered">
-                    <skill-card v-for="skill in skills.main" v-bind:key="skill.id" v-bind="skill"></skill-card>
-                </div>
-                <h4 class="subtitle is-5 has-text-grey-darker">
-                    <span>Sub Languages</span>
-                </h4>
-                <p class="desc">たまに使う言語や授業で使ったことのある言語です。</p>
-                <div class="columns is-desktop is-multiline is-centered">
-                    <skill-card v-for="skill in skills.sub" v-bind:key="skill.id" v-bind="skill"></skill-card>
-                </div>
-                <h4 class="subtitle is-5 has-text-grey-darker">
-                    <span>OS</span>
-                </h4>
-                <div class="columns is-desktop is-multiline is-centered">
-                    <skill-card v-for="skill in skills.OS" v-bind:key="skill.id" v-bind="skill"></skill-card>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="work">
-            <h3 class="title is-3">
-                <span>Work</span>
-            </h3>
-            <div class="container card-grid">
-                <div class="columns is-desktop is-multiline is-centered">
-                    <work-card v-for="work in works" v-bind:key="work.id" v-bind="work"></work-card>
-                </div>
-            </div>
-        </section>
-
-        <section class="section has-background-grey-lighter" id="contact">
-            <h3 class="title is-3">
-                <span>Contact</span>
-            </h3>
-            <p class="pre-line">{{ contact }}</p>
-        </section>
-    </div>
-
-    <footer class="footer has-background-grey-darker">
-        <div class="content has-text-centered">
-            <p class="has-text-grey-lighter">Copyright © 2020 torin All Rights Reserved.</p>
-            <a class="icon has-text-grey-lighter" target=”_blank” href="https://github.com/yurkth/portfolio">
-                <i class="fab fa-github"></i>
-            </a>
+  <div id="app" class="has-text-grey-darker">
+    <a id="home"></a>
+    <section class="hero is-dark is-bold is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-2">torin's portfolio</h1>
         </div>
-    </footer>
+      </div>
+      <div class="hero-foot is-hidden-mobile has-background-white">
+        <div class="hero-foot--wrapper">
+          <div class="columns">
+            <div class="column is-12 hero-menu-desktop has-text-centered">
+              <ul>
+                <li class="is-active">
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#profile">Profile</a>
+                </li>
+                <li>
+                  <a href="#skill">Skill</a>
+                </li>
+                <li>
+                  <a href="#work">Work</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-    <script src="assets/js/main.js"></script>
+    <section class="section" id="profile">
+      <h3 class="title is-3">
+        <span>Profile</span>
+      </h3>
+      <div class="container">
+        <h4 class="subtitle is-3 has-text-grey-darker">torin</h4>
+        <div class="columns is-desktop is-centered is-vcentered">
+          <div class="column">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200px"
+              height="200px" viewBox="0,0,10,10">
+              <path
+                d="m0,0h10v2h-1v-1h-1v1h-2v-1h-2v1h-2v-1h-1v1h-1zm0,8h1v1h1v1h-2zm9,0h1v2h-2v-1h1zm-6,1h1v1h-1zm3,0h1v1h-1z"
+                opacity="0" />
+              <path
+                d="m1,1h1v1h2v-1h2v1h2v-1h1v1h1v6h-1v1h-1v1h-1v-1h-1v1h-2v-1h-1v1h-1v-1h-1v-1h-1v-6h1zm1,1h-1v6h1v1h1v-1h1v1h2v-1h1v1h1v-1h1v-6h-1v1h-2v-1h-2v1h-2zm0,2h1v1h-1zm5,0h1v1h-1zm-3,1h2v1h-2z"
+                v-bind:fill="svg.color[svg.index].outline" />
+              <path
+                d="m1,2h1v1h2v-1h2v1h2v-1h1v6h-1v1h-1v-1h-1v1h-2v-1h-1v1h-1v-1h-1zm2,2h-1v1h1zm5,0h-1v1h1zm-3,1h-1v1h2v-1z"
+                v-bind:fill="svg.color[svg.index].base" />
+            </svg>
+          </div>
+          <div class="column">
+            <p class="pre-line">{{ profile }}</p>
+            <div class="social-media">
+              <media-button v-for="media in medias" v-bind:key="media.id" v-bind="media"></media-button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section has-background-grey-lighter" id="skill">
+      <h3 class="title is-3">
+        <span>Skill</span>
+      </h3>
+      <div class="container card-grid">
+        <h4 class="subtitle is-5 has-text-grey-darker">
+          <span>Main Languages</span>
+        </h4>
+        <p class="desc">基本的にはこれらの言語を使っています。</p>
+        <div class="columns is-desktop is-multiline is-centered">
+          <skill-card v-for="skill in skills.main" v-bind:key="skill.id" v-bind="skill"></skill-card>
+        </div>
+        <h4 class="subtitle is-5 has-text-grey-darker">
+          <span>Sub Languages</span>
+        </h4>
+        <p class="desc">たまに使う言語や授業で使ったことのある言語です。</p>
+        <div class="columns is-desktop is-multiline is-centered">
+          <skill-card v-for="skill in skills.sub" v-bind:key="skill.id" v-bind="skill"></skill-card>
+        </div>
+        <h4 class="subtitle is-5 has-text-grey-darker">
+          <span>OS</span>
+        </h4>
+        <div class="columns is-desktop is-multiline is-centered">
+          <skill-card v-for="skill in skills.OS" v-bind:key="skill.id" v-bind="skill"></skill-card>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <h3 class="title is-3">
+        <span>Work</span>
+      </h3>
+      <div class="container card-grid">
+        <div class="columns is-desktop is-multiline is-centered">
+          <work-card v-for="work in works" v-bind:key="work.id" v-bind="work"></work-card>
+        </div>
+      </div>
+    </section>
+
+    <section class="section has-background-grey-lighter" id="contact">
+      <h3 class="title is-3">
+        <span>Contact</span>
+      </h3>
+      <p class="pre-line">{{ contact }}</p>
+    </section>
+  </div>
+
+  <footer class="footer has-background-grey-darker">
+    <div class="content has-text-centered">
+      <p class="has-text-grey-lighter">Copyright © 2020 torin All Rights Reserved.</p>
+      <a class="icon has-text-grey-lighter" target=”_blank” href="https://github.com/yurkth/portfolio">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
