@@ -66,7 +66,7 @@ Vue.component('work-card', {
           <img v-bind:src="image">
         </div>
         <p class="pre-line">{{ desc }}</p>
-        <a target=”_blank” v-if="href" v-bind:href="href">View GitHub</a>
+        <a target=”_blank” v-if="href" v-bind:href="href">View on GitHub</a>
       </div>
     </div>
   </div>
