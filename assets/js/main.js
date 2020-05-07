@@ -115,17 +115,17 @@ new Vue({
                     基本的にOpenSiv3Dというフレームワークを使っています。`
         },
         {
-          name: 'C#',
-          desc: `高校の頃にUnityを使ってゲームの開発をしていました。
-                    最近はOSSの改良などに使っています。`
+          name: 'JavaScript',
+          icon: 'fab fa-js-square',
+          desc: `このポートフォリオではVue.jsを使用しています。
+                    普段はp5.jsで色々作っています。`
         }
       ],
       sub: [
         {
-          name: 'JavaScript',
-          icon: 'fab fa-js-square',
-          desc: `このポートフォリオではVue.jsを使用しています。
-                    最近、p5.jsを始めました。楽しいです。`
+          name: 'C#',
+          desc: `高校の頃にUnityを使ってゲームの開発をしていました。
+                    最近はOSSの改良などに使っています。`
         },
         {
           name: 'Ruby',
@@ -154,6 +154,11 @@ new Vue({
                     このポートフォリオの作成にも使っています`
         },
         {
+          name: 'Lua',
+          desc: `ソフトのプラグインを作るときに使いました。
+                    最近、PICO-8でゲームを作り始めました。`
+        },
+        {
           name: 'R',
           desc: `大学の授業で使いました。`
         },
@@ -166,10 +171,6 @@ new Vue({
           name: 'Swift',
           icon: 'devicons devicons-swift',
           desc: `高校の頃に趣味で使いました。`
-        },
-        {
-          name: 'Lua',
-          desc: `ソフトのプラグインを作るときに使いました。`
         },
         {
           name: 'Verilog',
