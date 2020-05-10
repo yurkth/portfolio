@@ -214,6 +214,14 @@ new Vue({
                 Poisson Disk Sampling、Delaunay三角形分割、A*を利用しています。`
       },
       {
+        name: "Astraea",
+        tags: ["JavaScript", "p5.js", "Python"],
+        href: "https://github.com/yurkth/astraea",
+        image: "assets/img/astraea.png",
+        desc: `ドット絵で描かれた惑星を生成します。
+                Astraeaで生成された惑星の画像を共有するTwitterのbotも作りました(@astraea_yk)。`
+      },
+      {
         name: "Portfolio",
         tags: ["HTML", "CSS", "JavaScript", "Vue.js"],
         href: "https://github.com/yurkth/portfolio",
