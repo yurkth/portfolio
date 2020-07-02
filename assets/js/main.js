@@ -88,7 +88,7 @@ new Vue({
   data: {
     profile: `はじめまして。torinと申します。
         現在、東京農工大学に通っており、2022年卒業予定の学部生です。理系の高校に通っていたため、高校の頃からプログラミングを学んでいます。
-        最近、興味のある分野はALifeやProcedural generationです。`,
+        Procedural Generationという分野に興味があり、様々なコンテンツジェネレーターを作っています。`,
     svg: {
       color: [
         { base: '#c7b83c', outline: '#503c18' },
@@ -155,8 +155,7 @@ new Vue({
         },
         {
           name: 'Lua',
-          desc: `ソフトのプラグインを作るときに使いました。
-                    最近、PICO-8でゲームを作り始めました。`
+          desc: `PICO-8でゲームを作るときに使っています。`
         },
         {
           name: 'R',
@@ -222,6 +221,14 @@ new Vue({
                 Astraeaで生成された惑星の画像を共有するTwitterのbotも作りました(@astraea_yk)。`
       },
       {
+        name: "BIB",
+        tags: ["Lua", "PICO-8"],
+        href: "https://github.com/yurkth/bib",
+        image: "assets/img/bib.png",
+        desc: `SHIBUYA PIXEL ART 2020というコンテストに応募するために作りました。
+                Chromeの恐竜のゲームと似ています。`
+      },
+      {
         name: "Portfolio",
         tags: ["HTML", "CSS", "JavaScript", "Vue.js"],
         href: "https://github.com/yurkth/portfolio",
@@ -249,7 +256,7 @@ new Vue({
         tags: ["Python", "Kivy"],
         image: "assets/img/sudoku.png",
         desc: `高校の卒業研究で作りました。
-                与えられた数独の問題を解くことと、ランダムな数独の問題を作ることができます。ソースコードは公開していません。
+                難易度を指定した問題の生成や、問題を解かせることができます。。ソースコードは公開していません。
                 ちなみに数独を解くのは好きですが、あまり得意ではないです。`
       }
     ],
