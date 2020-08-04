@@ -66,7 +66,7 @@ Vue.component('work-card', {
           <img v-bind:src="image">
         </div>
         <p class="pre-line">{{ desc }}</p>
-        <a target=”_blank” v-if="href" v-bind:href="href">View on GitHub</a>
+        <a target=”_blank” v-if="a" v-bind:href="a.href">{{ a.text }}</a>
       </div>
     </div>
   </div>
@@ -74,10 +74,7 @@ Vue.component('work-card', {
   props: {
     name: String,
     tags: Array,
-    href: {
-      type: String,
-      default: ""
-    },
+    a: Array,
     image: String,
     desc: String
   }
@@ -199,7 +196,10 @@ new Vue({
       {
         name: "Sprator",
         tags: ["C++", "OpenSiv3D"],
-        href: "https://github.com/yurkth/sprator",
+        a: {
+          text: "View on GitHub",
+          href: "https://github.com/yurkth/sprator"
+        },
         image: "assets/img/sprator.png",
         desc: `10x10のドット絵のアイコンを生成できるソフトです。
                 生成アルゴリズムにはセル・オートマトンを使用しています。`
@@ -207,7 +207,10 @@ new Vue({
       {
         name: "stsmapgen (Procedural Map Generator)",
         tags: ["JavaScript", "p5.js"],
-        href: "https://github.com/yurkth/stsmapgen",
+        a: {
+          text: "View on GitHub",
+          href: "https://github.com/yurkth/stsmapgen"
+        },
         image: "assets/img/mapgen.png",
         desc: `Slay the Spireというゲームに出てくるようなマップを生成します。
                 Poisson Disk Sampling、Delaunay三角形分割、A*を利用しています。`
@@ -215,7 +218,10 @@ new Vue({
       {
         name: "Astraea",
         tags: ["JavaScript", "p5.js", "Python"],
-        href: "https://github.com/yurkth/astraea",
+        a: {
+          text: "View on GitHub",
+          href: "https://github.com/yurkth/astraea"
+        },
         image: "assets/img/astraea.png",
         desc: `ドット絵で描かれた惑星を生成します。
                 Astraeaで生成された惑星の画像を共有するTwitterのbotも作りました(@astraea_yk)。`
@@ -223,7 +229,10 @@ new Vue({
       {
         name: "BIB",
         tags: ["Lua", "PICO-8"],
-        href: "https://github.com/yurkth/bib",
+        a: {
+          text: "Play",
+          href: "https://www.lexaloffle.com/bbs/?pid=78698"
+        },
         image: "assets/img/bib.png",
         desc: `SHIBUYA PIXEL ART 2020というコンテストに応募するために作りました。
                 Chromeの恐竜のゲームと似ています。`
@@ -231,14 +240,20 @@ new Vue({
       {
         name: "Portfolio",
         tags: ["HTML", "CSS", "JavaScript", "Vue.js"],
-        href: "https://github.com/yurkth/portfolio",
+        a: {
+          text: "View on GitHub",
+          href: "https://github.com/yurkth/portfolio"
+        },
         image: "assets/img/portfolio.png",
         desc: `このサイトです。Vue.jsとBulmaを使用しています。`
       },
       {
         name: "Remote controller",
         tags: ["Python", "Flask", "HTML", "CSS", "JavaScript", "Vue.js"],
-        href: "https://github.com/yurkth/remote",
+        a: {
+          text: "View on GitHub",
+          href: "https://github.com/yurkth/remote"
+        },
         image: "assets/img/remote.png",
         desc: `ラズパイやスマホからPCを操作できます。日付や時間のほか、PCで再生している楽曲の詳細も表示できます。
                 フロントエンドにVue.js、バックエンドにFlaskを使っています。CSSフレームワークはBulmaです。`
@@ -246,7 +261,10 @@ new Vue({
       {
         name: "discord-notify",
         tags: ["Python"],
-        href: "https://github.com/yurkth/discord-notify",
+        a: {
+          text: "View on GitHub",
+          href: "https://github.com/yurkth/discord-notify"
+        },
         image: "assets/img/discord-notify.png",
         desc: `学科掲示板の更新内容をDiscordに通知してくれます。
                 もともとLINE Notifyを使っていたのですが、DiscordのWebhookでEmbedを使ったほうが見た目がよさそうだったので作り直しました。`
