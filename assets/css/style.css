@@ -29,7 +29,7 @@ body {
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
-  color: #363636;
+  color: #363636 !important;
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
