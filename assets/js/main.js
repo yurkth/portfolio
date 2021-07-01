@@ -84,8 +84,7 @@ new Vue({
   el: '#app',
   data: {
     profile: `はじめまして。torinと申します。
-        現在、東京農工大学に通っており、2022年卒業予定の学部生です。理系の高校に通っていたため、高校の頃からプログラミングを学んでいます。
-        Procedural Generationという分野に興味があり、様々なコンテンツジェネレーターを作っています。`,
+        Procedural Generationという技術に興味があり、様々なコンテンツジェネレーターを作っています。`,
     svg: {
       color: [
         { base: '#c7b83c', outline: '#503c18' },
